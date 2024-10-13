@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/SionnasDream/static/css/main.7f62e490.css",
-    "main.js": "/SionnasDream/static/js/main.89a316d7.js",
+    "main.js": "/SionnasDream/static/js/main.23e20cd6.js",
     "static/js/453.339a720b.chunk.js": "/SionnasDream/static/js/453.339a720b.chunk.js",
     "static/media/Sionna720.jpg": "/SionnasDream/static/media/Sionna720.d10287a5c01fd426a6f6.jpg",
     "static/media/PaperBack.jpg": "/SionnasDream/static/media/PaperBack.3c02ce3d3e898626f42d.jpg",
     "static/media/SionnaBG240.jpg": "/SionnasDream/static/media/SionnaBG240.1251917401051fe654ed.jpg",
     "index.html": "/SionnasDream/index.html",
     "main.7f62e490.css.map": "/SionnasDream/static/css/main.7f62e490.css.map",
-    "main.89a316d7.js.map": "/SionnasDream/static/js/main.89a316d7.js.map",
+    "main.23e20cd6.js.map": "/SionnasDream/static/js/main.23e20cd6.js.map",
     "453.339a720b.chunk.js.map": "/SionnasDream/static/js/453.339a720b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7f62e490.css",
-    "static/js/main.89a316d7.js"
+    "static/js/main.23e20cd6.js"
   ]
 }
