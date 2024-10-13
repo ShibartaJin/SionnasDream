@@ -107,8 +107,6 @@
     .chapterTitle, .hook{      font-size: 28px;    }
   }
 
-
-
   .navButton{
     text-align: center;
     cursor: pointer;
@@ -144,15 +142,12 @@
   }
 
   .fictionText p{
-    font-size: 20px;
+    font-size: 24px;
     text-align: left;
     margin-top: 0;
   }
 
   @media only screen and (max-width: 800px) {
-    .fictionText p{
-      font-size: 16px;
-    }
 
     span.sceneBreak{      font-size: 16px;    }
   
@@ -165,6 +160,11 @@
     .msgTimeMark{
       font-size: 10px;
     }
+  }
+
+  @media only screen and (max-width: 700px){
+    .fictionText p{      font-size: 16px;    }
+
   }
 
   span.sceneBreak{
@@ -206,7 +206,7 @@
     justify-content: center;
     align-items: center;
     
-    width: 500px; /* Fixed width */
+    width: 400px; /* Fixed width */
     max-width: 80vw; /* Conform to 80% of viewport width */
     max-height: 80vh; /* Optional: conform to 80% of viewport height */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: shadow for visibility */
