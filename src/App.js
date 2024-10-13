@@ -41,6 +41,7 @@ function App() {
           <Route path="/SionnasDream/8" element={<Sionna8 />} />
           <Route path="/SionnasDream/9" element={<Sionna9 />} />
           <Route path="/SionnasDream/9x" element={<Sionna9x />} />
+          <Route path="/SionnasDream/*" element={<Sionna />} />
           <Route path="*" element={<Sionna />} />
 
         </Routes>

@@ -75,7 +75,7 @@ function Sionna() {
       
       <div className="contentPage">
 
-        <h1>目錄(v0514am)</h1>
+        <h1>目錄</h1>
 
         <div class="spear-container">
           <div class="spear spear-v2">
