@@ -30,17 +30,17 @@ function App() {
 
         <Routes>
           <Route path="/SionnasDream/" element={<Sionna />} />
-          <Route path="/SionnasDream/Sionna/0" element={<Sionna0 />} />
-          <Route path="/SionnasDream/Sionna/1" element={<Sionna1 />} />
-          <Route path="/SionnasDream/Sionna/2" element={<Sionna2 />} />
-          <Route path="/Sionna/3" element={<Sionna3 />} />
-          <Route path="/Sionna/4" element={<Sionna4 />} />
-          <Route path="/Sionna/5" element={<Sionna5 />} />
-          <Route path="/Sionna/6" element={<Sionna6 />} />
-          <Route path="/Sionna/7" element={<Sionna7 />} />
-          <Route path="/Sionna/8" element={<Sionna8 />} />
-          <Route path="/Sionna/9" element={<Sionna9 />} />
-          <Route path="/Sionna/9x" element={<Sionna9x />} />
+          <Route path="/SionnasDream/0" element={<Sionna0 />} />
+          <Route path="/SionnasDream/1" element={<Sionna1 />} />
+          <Route path="/SionnasDream/2" element={<Sionna2 />} />
+          <Route path="/SionnasDream/3" element={<Sionna3 />} />
+          <Route path="/SionnasDream/4" element={<Sionna4 />} />
+          <Route path="/SionnasDream/5" element={<Sionna5 />} />
+          <Route path="/SionnasDream/6" element={<Sionna6 />} />
+          <Route path="/SionnasDream/7" element={<Sionna7 />} />
+          <Route path="/SionnasDream/8" element={<Sionna8 />} />
+          <Route path="/SionnasDream/9" element={<Sionna9 />} />
+          <Route path="/SionnasDream/9x" element={<Sionna9x />} />
 
 
         </Routes>
