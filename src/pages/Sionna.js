@@ -77,9 +77,9 @@ function Sionna() {
           <h3>第一篇：綠林與石堡</h3>
 
           <ul className="act1">
-            <li><a href="/SionnasDream/0">零‧夢的鬧鐘 (新!)</a></li>
-            <li><a href="/SionnasDream/1">一‧女王夢</a></li>
-            <li><a href="/SionnasDream/2">二‧靈魂請了假</a></li>
+            <li><a href="/0">零‧夢的鬧鐘 (新!)</a></li>
+            <li><a href="/1">一‧女王夢</a></li>
+            <li><a href="/2">二‧靈魂請了假</a></li>
             <li><a href="/SionnasDream/3">三‧為不運動而熱身</a></li>
             <li><a href="/SionnasDream/4">四‧窗外的樹</a></li>
             <li><a href="/SionnasDream/5">五‧騎士與女王</a></li>
