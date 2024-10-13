@@ -77,17 +77,17 @@ function Sionna() {
           <h3>第一篇：綠林與石堡</h3>
 
           <ul className="act1">
-            <li><a href="/Sionna/0">零‧夢的鬧鐘 (新!)</a></li>
-            <li><a href="/Sionna/1">一‧女王夢</a></li>
-            <li><a href="/Sionna/2">二‧靈魂請了假</a></li>
-            <li><a href="/Sionna/3">三‧為不運動而熱身</a></li>
-            <li><a href="/Sionna/4">四‧窗外的樹</a></li>
-            <li><a href="/Sionna/5">五‧騎士與女王</a></li>
-            <li><a href="/Sionna/6">六‧不想走的路</a></li>
-            <li><a href="/Sionna/7">七‧這是遊戲啊</a></li>
-            <li><a href="/Sionna/8">八‧征伐、戰爭、温飽、生活 (新!)</a></li>
-            <li><a href="/Sionna/9">九‧要愛情、也要戰爭 (新!)</a></li>
-            <li><a href="/Sionna/9x">後‧夢境(新!)</a></li>
+            <li><a href="/SionnasDream/0">零‧夢的鬧鐘 (新!)</a></li>
+            <li><a href="/SionnasDream/1">一‧女王夢</a></li>
+            <li><a href="/SionnasDream/2">二‧靈魂請了假</a></li>
+            <li><a href="/SionnasDream/3">三‧為不運動而熱身</a></li>
+            <li><a href="/SionnasDream/4">四‧窗外的樹</a></li>
+            <li><a href="/SionnasDream/5">五‧騎士與女王</a></li>
+            <li><a href="/SionnasDream/6">六‧不想走的路</a></li>
+            <li><a href="/SionnasDream/7">七‧這是遊戲啊</a></li>
+            <li><a href="/SionnasDream/8">八‧征伐、戰爭、温飽、生活 (新!)</a></li>
+            <li><a href="/SionnasDream/9">九‧要愛情、也要戰爭 (新!)</a></li>
+            <li><a href="/SionnasDream/9x">後‧夢境(新!)</a></li>
 
           </ul>
 
