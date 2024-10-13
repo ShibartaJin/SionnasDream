@@ -75,7 +75,7 @@ function Sionna() {
       
       <div className="contentPage">
 
-        <h1>目錄</h1>
+        <h1>目錄(v0514am)</h1>
 
         <div class="spear-container">
           <div class="spear spear-v2">
@@ -95,7 +95,7 @@ function Sionna() {
           <h3>第一篇：綠林與石堡</h3>
 
           <ul className="act1">
-            <li><Link to="/SionnasDream/0" className="link"><a>零‧夢的鬧鐘 (新!)</a></Link></li>
+            <li><Link to="/SionnasDream/0" className="link">零‧夢的鬧鐘 (新!)</Link></li>
             <li><Link to="/SionnasDream/1" className="link">一‧女王夢</Link></li>
             <li><Link to="/SionnasDream/2" className="link">二‧靈魂請了假</Link></li>
             <li><Link to="/SionnasDream/3" className="link">三‧為不運動而熱身</Link></li>

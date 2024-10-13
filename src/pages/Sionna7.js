@@ -15,11 +15,11 @@ function Sionna7() {
     <div className="SionnaPages">
       <div className="storyContent">
         <div className="chapterHeading">
-          <div className="previousButton navButton" onClick={() => {navigate("/Sionna/" + (chapterID - 1))}}>
+          <div className="previousButton navButton" onClick={() => {navigate("/SionnasDream/" + (chapterID - 1))}}>
               <img src={arrowHead}></img>
           </div>
           <h2 className="chapterTitle">七‧這是遊戲啊</h2>
-          <div className="nextButton navButton" onClick={() => {navigate("/Sionna/" + (chapterID + 1))}}>
+          <div className="nextButton navButton" onClick={() => {navigate("/SionnasDream/" + (chapterID + 1))}}>
               <img src={arrowHead}></img>
           </div>
         </div>
@@ -45,13 +45,13 @@ function Sionna7() {
         </div>
         
         <div className="chapterHeading">
-          <div className="previousButton navButton" onClick={() => {navigate("/Sionna/" + (chapterID - 1))}}>
+          <div className="previousButton navButton" onClick={() => {navigate("/SionnasDream/" + (chapterID - 1))}}>
               <img src={arrowHead}></img>
           </div>
-          <div className="navButton" onClick={() => {navigate("/Sionna")}}>
+          <div className="navButton" onClick={() => {navigate("/SionnasDream")}}>
             <h2 className="chapterTitle">回主目錄</h2>
           </div>
-          <div className="nextButton navButton" onClick={() => {navigate("/Sionna/"+ (chapterID + 1))}}>
+          <div className="nextButton navButton" onClick={() => {navigate("/SionnasDream/"+ (chapterID + 1))}}>
               <img src={arrowHead}></img>
           </div>
         </div>
@@ -63,7 +63,7 @@ function Sionna7() {
 }
 
 function FetchTextFile(){
-  fetch('/text/sionna' + chapterID + '.txt')
+  fetch('./text/sionna' + chapterID + '.txt')
     .then(response => response.text())
     .then(text => {
         document.getElementById('fictionText').innerHTML = formatText(text);

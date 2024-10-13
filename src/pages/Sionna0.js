@@ -15,11 +15,11 @@ function Sionna0() {
     <div className="SionnaPages">
       <div className="storyContent">
         <div className="chapterHeading">
-          <div className="previousButton navButton" onClick={() => {navigate("/Sionna")}}>
+          <div className="previousButton navButton" onClick={() => {navigate("/SionnasDream")}}>
               <img src={arrowHead}></img>
           </div>
           <h2 className="chapterTitle">零‧不怕鬧鐘的夢</h2>
-          <div className="nextButton navButton" onClick={() => {navigate("/Sionna/" + (chapterID + 1))}}>
+          <div className="nextButton navButton" onClick={() => {navigate("/SionnasDream/" + (chapterID + 1))}}>
               <img src={arrowHead}></img>
           </div>
         </div>
@@ -45,13 +45,13 @@ function Sionna0() {
         </div>
         
         <div className="chapterHeading">
-          <div className="previousButton navButton" onClick={() => {navigate("/Sionna")}}>
+          <div className="previousButton navButton" onClick={() => {navigate("/SionnasDream")}}>
               <img src={arrowHead}></img>
           </div>
-          <div className="navButton" onClick={() => {navigate("/Sionna")}}>
+          <div className="navButton" onClick={() => {navigate("/SionnasDream")}}>
             <h2 className="chapterTitle">回主目錄</h2>
           </div>
-          <div className="nextButton navButton" onClick={() => {navigate("/Sionna/"+ (chapterID + 1))}}>
+          <div className="nextButton navButton" onClick={() => {navigate("/SionnasDream/"+ (chapterID + 1))}}>
               <img src={arrowHead}></img>
           </div>
         </div>
@@ -64,7 +64,7 @@ function Sionna0() {
 
 function FetchTextFile(){
   console.log("Fetching text file...");
-  fetch('/text/sionna' + chapterID + '.txt')
+  fetch('./text/sionna' + chapterID + '.txt')
     .then(response => response.text())
     .then(text => {
         console.log("Fetching successful..." + text);

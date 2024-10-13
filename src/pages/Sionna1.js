@@ -63,7 +63,7 @@ function Sionna1() {
 }
 
 function FetchTextFile(){
-  fetch('/text/sionna1.txt')
+  fetch('./text/sionna' + chapterID + '.txt')
     .then(response => response.text())
     .then(text => {
         document.getElementById('fictionText').innerHTML = formatText(text);
