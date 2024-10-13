@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState, useEffect } from 'react';
+import {Link} from "react-router-dom";
 
 import "../styles/Sionna.css";
 import "../styles/Spear.css";
@@ -39,7 +40,24 @@ function PropicReturn(){
   
 }
 
-/* */
+/* 
+
+
+          <ul className="act1">
+            <li><a href="/SionnasDream/0">零‧夢的鬧鐘 (新!)</a></li>
+            <li><a href="/SionnasDream/1">一‧女王夢</a></li>
+            <li><a href="/SionnasDream/2">二‧靈魂請了假</a></li>
+            <li><a href="/SionnasDream/3">三‧為不運動而熱身</a></li>
+            <li><a href="/SionnasDream/4">四‧窗外的樹</a></li>
+            <li><a href="/SionnasDream/5">五‧騎士與女王</a></li>
+            <li><a href="/SionnasDream/6">六‧不想走的路</a></li>
+            <li><a href="/SionnasDream/7">七‧這是遊戲啊</a></li>
+            <li><a href="/SionnasDream/8">八‧征伐、戰爭、温飽、生活 (新!)</a></li>
+            <li><a href="/SionnasDream/9">九‧要愛情、也要戰爭 (新!)</a></li>
+            <li><a href="/SionnasDream/9x">後‧夢境(新!)</a></li>
+
+          </ul>
+*/
 
 function Sionna() {
   return (
@@ -77,17 +95,17 @@ function Sionna() {
           <h3>第一篇：綠林與石堡</h3>
 
           <ul className="act1">
-            <li><a href="/0">零‧夢的鬧鐘 (新!)</a></li>
-            <li><a href="/1">一‧女王夢</a></li>
-            <li><a href="/2">二‧靈魂請了假</a></li>
-            <li><a href="/SionnasDream/3">三‧為不運動而熱身</a></li>
-            <li><a href="/SionnasDream/4">四‧窗外的樹</a></li>
-            <li><a href="/SionnasDream/5">五‧騎士與女王</a></li>
-            <li><a href="/SionnasDream/6">六‧不想走的路</a></li>
-            <li><a href="/SionnasDream/7">七‧這是遊戲啊</a></li>
-            <li><a href="/SionnasDream/8">八‧征伐、戰爭、温飽、生活 (新!)</a></li>
-            <li><a href="/SionnasDream/9">九‧要愛情、也要戰爭 (新!)</a></li>
-            <li><a href="/SionnasDream/9x">後‧夢境(新!)</a></li>
+            <li><Link to="/SionnasDream/0" className="link"><a>零‧夢的鬧鐘 (新!)</a></Link></li>
+            <li><Link to="/SionnasDream/1" className="link">一‧女王夢</Link></li>
+            <li><Link to="/SionnasDream/2" className="link">二‧靈魂請了假</Link></li>
+            <li><Link to="/SionnasDream/3" className="link">三‧為不運動而熱身</Link></li>
+            <li><Link to="/SionnasDream/4" className="link">四‧窗外的樹</Link></li>
+            <li><Link to="/SionnasDream/5" className="link">五‧騎士與女王</Link></li>
+            <li><Link to="/SionnasDream/6" className="link">六‧不想走的路</Link></li>
+            <li><Link to="/SionnasDream/7" className="link">七‧這是遊戲啊</Link></li>
+            <li><Link to="/SionnasDream/8" className="link">八‧征伐、戰爭、温飽、生活 (新!)</Link></li>
+            <li><Link to="/SionnasDream/9" className="link">九‧要愛情、也要戰爭 (新!)</Link></li>
+            <li><Link to="/SionnasDream/9x" className="link">後‧夢境(新!)</Link></li>
 
           </ul>
 
