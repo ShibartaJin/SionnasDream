@@ -217,7 +217,6 @@ LED取代了上世紀末的霓虹燈，在五十年過後再次牽起了夜燈�
 <div class="msgTitle">
 </p><div class="alignMid">欣欣杯<<<3</div>
 <div class="alignMid msgTimeMark">(最後上線時間：9:24pm)</div>
-<div class="alignMid">________________________________________</div>
 </div>
 <div class="alignRight">「早晨：3」</div>
 <div class="alignRight msgTimeMark">10:32am (己讀)</div>
@@ -225,7 +224,6 @@ LED取代了上世紀末的霓虹燈，在五十年過後再次牽起了夜燈�
 <div class="alignLeft msgTimeMark">1:42pm</div>
 <div class="alignRight">「今日有咩做呀？」</div>
 <div class="alignRight msgTimeMark">1:43pm (未讀)</div><p>
-<div class="alignMid">________________________________________</div>
 </div></div><p>
 
 晚上九時半了。
