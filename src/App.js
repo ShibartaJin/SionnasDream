@@ -30,6 +30,8 @@ function App() {
 
         <Routes>
           <Route path="/SionnasDream/" element={<Sionna />} />
+          <Route path="/SionnasDream2/" element={<Sionna />} />
+
           <Route path="/SionnasDream/0" element={<Sionna0 />} />
           <Route path="/SionnasDream/1" element={<Sionna1 />} />
           <Route path="/SionnasDream/2" element={<Sionna2 />} />
