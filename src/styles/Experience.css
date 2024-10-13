@@ -1,0 +1,19 @@
+li {
+    line-height: 1.5;
+}
+
+.experience {
+    position: relative;
+    top: 1;
+    padding-bottom: 50px;
+    background-color: #c4d0db;
+}
+
+.experience h2{
+    font-size: 24px;
+}
+
+.test {
+    color: rgb(179, 218, 233);
+    
+}

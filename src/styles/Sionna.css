@@ -1,0 +1,218 @@
+.SionnaMain {
+    width: 100%;
+    align-items: center;
+    font-family:"MingLiU","DFKai-sb",serif,sans-serif;
+    font-weight: bold;
+    color: #352315;
+    margin: 0;
+  }
+  
+  * {
+    transition: all .2s ease-in-out;
+  }
+
+  .about {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #e0c457a2;
+    color: #234F1E;
+    float:left;
+    position: fixed;
+  }
+
+  @media only screen and (max-width: 1100px){
+    .about {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
+  }
+  
+  .propic {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      width: 86%;
+      height: 86%;
+  }
+
+  .img-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .img-container img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      aspect-ratio: 2 / 3;
+      border: 5px solid #3A5311;
+      border-radius: 2%;
+
+  }
+
+  .bg-image {
+    position: absolute;
+
+    /* The image used */
+    background-image: url("../assets/SionnaBG240.jpg");
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    height: 100%;
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+/* ------ contentPage ------ */
+
+/*
+#234F1E Pine green
+#f1fdea Background ???
+
+Brown
+#352315 Umber
+*/
+
+  .contentPage {
+    font-size: 35px;
+    height: 100vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    background-color: #cfc4b1;
+    color: #352315;
+
+    background-image: url(../assets/PaperBack.jpg);
+    background-size: cover;
+  }
+
+  @media only screen and (max-width: 1100px) {
+
+    .contentPage {
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  h1 {
+    color: #25190f;
+    margin: 2vh;
+    text-shadow: 3px 3px #E9FFDB;
+    
+  }
+  
+  /* Act title */
+  h3 {
+    color: #234F1E;
+    font-size: 50px;
+    margin: 2vh;
+    text-shadow: 1px 1px #386933;
+    justify-content: left;
+
+  }
+
+  h4{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-shadow: 2px 2px rgb(162, 186, 238);
+  }
+  
+/* ------ Content page list ------ */
+
+  .contentPage .list{
+    margin-bottom: 2vh;
+    list-style: none;
+    width: 70%;
+    size: 40px;
+    text-align: left;
+
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .contentPage li {      margin-left: 5vh;    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .contentPage li {      margin-left: 0;    }
+    .contentPage {      font-size: 26px;    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .contentPage {      font-size: 22px;    }
+  }
+
+  .contentPage ul{
+    list-style-type: none;
+
+  }
+
+  .list a:link {
+    color: #234F1E;
+    text-decoration: none;
+  }
+  
+  .list a:visited {
+    color: #352315;
+    text-decoration: none;
+  }
+  
+  .list a:hover {
+    color: #234F1E;
+    text-decoration: underline;
+  }
+  
+  .list a:active {
+    color: #352315;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  @media only screen and (max-width: 1100px) {
+  
+    .contentPage .list {
+      margin: 0px;
+      margin-bottom: 2vh;
+      padding: 0;
+      list-style: none;
+      width: 90%;
+      size: 40px;
+      justify-content: left;
+      align-items: left;
+    }
+
+    .contentPage h1{
+      font-size: 45px;
+    }
+    .contentPage h3 {
+      color: #234F1E;
+      font-size: 35px;
+    }
+
+    .contentPage span {
+      font-size: 20px;
+    }
+    
+
+  }

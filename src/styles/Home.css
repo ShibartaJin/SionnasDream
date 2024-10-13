@@ -1,0 +1,210 @@
+.home {
+    width: 100%;
+    align-items: center;
+    font-family: "Arial", sans-serif;
+    color: #28375e;
+  }
+  
+  * {
+    transition: all .3s ease-in-out;
+  }
+
+  .about {
+    width: 40%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #1a2749;
+    color: #f0f0f0;
+    float:left;
+    position: fixed;
+
+  }
+
+  .propic img {
+    width: max(15vw, 200px) ;
+    height: max(15vw, 200px) ;
+    display: flex;
+    border-radius: 50%;
+    border: 5px solid #d8cd80;
+    margin: 5px;
+  }
+
+/* ------ Skills ------ */
+
+  .skills {
+    font-size: 35px;
+    height: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    background-color: #234F1E;
+    color: #234F1E;
+    padding-bottom: 300px;
+    padding-top: 5vh;
+  }
+
+  .Summary {
+    width: 90%;
+  }
+  .Summary p {
+    text-indent: 50px;
+    font-size: 25px;
+  }
+  
+  hr.roundedDivLine {
+    background-color: #3e5692;
+    border-radius: 5px;
+    border-top: 10px solid rgb(148, 165, 202);
+    width: 90%;
+  }
+
+  .skills h1 {/* Technical skills */
+    color: #234F1E;
+    margin: 2vh;
+    text-shadow: 3px 3px #234F1E;
+  }
+  
+  .skills h3 {
+    color: #234F1E;
+    font-size: 50px;
+    margin: 2vh;
+    text-shadow: 2px 2px #234F1E;
+    justify-content: left;
+
+  }
+  
+  .skills .list {
+    margin:0;
+    margin-bottom: 2vh;
+    padding: 0;
+    list-style: none;
+    width: 70%;
+    size: 40px;
+  }
+  
+  .list span {
+    font-size: 32px;
+  }
+
+  .skillList{
+    list-style-type: none;
+
+  }
+
+      .skillIcon {
+        display: inline ;
+        position: relative;
+        height: 32px;
+        width: 32px;
+        align-items: center;
+
+      }
+
+      .skillIcon img {
+        width: 35px;
+      }
+
+      .skillName{
+        display:inline;
+        white-space:nowrap;
+        padding-left: 15px;
+
+      }
+
+  .otherSkills {
+    font-size: 32px;
+    color:#234F1E;
+    justify-content: left;
+  }
+
+  h4{
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    text-shadow: 2px 2px #234F1E;
+  }
+
+
+
+  @media only screen and (max-width: 1400px) {
+    .skills {
+      padding-bottom: 200px;
+    }
+
+  }
+
+  @media only screen and (max-width: 1100px){
+
+    .about h3{
+      font-size: 50px;
+
+    }
+
+  }
+  
+  @media only screen and (max-width: 900px) {
+    .about {
+      padding-top: 5vh;
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .skills {
+      width: 100%;
+      padding-bottom: 100px;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .about h3 {
+      font-size: 45px;
+      color: #234F1E;
+    }
+  
+    .about .prompt {
+      margin-top: 5px;
+      font-size: 20px;
+      width: 90%;
+    }
+
+
+    .Summary p{
+      word-break: break-word;
+      font-size: 18px;
+    }
+
+    .skills .list {
+      margin: 0px;
+      margin-bottom: 2vh;
+      padding: 0;
+      list-style: none;
+      width: 90%;
+      size: 40px;
+      justify-content: left;
+      align-items: left;
+    }
+
+    .skills h1{
+      font-size: 45px;
+    }
+    .skills h3 {
+      color: #234F1E;
+      font-size: 35px;
+    }
+
+    .skills span {
+      font-size: 25px;
+    }
+    
+
+  }    
+  
