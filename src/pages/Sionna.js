@@ -10,7 +10,6 @@ import arrowHead from "../assets/arrowHeadRight.png";
 
 //import SionnaCoverSmall from "../assets/SionnaCoverSmall.jpg"
 function PropicReturn(){
-
   /* */
     const [windowSize, setWindowSize] = useState([
         window.innerWidth,
@@ -86,7 +85,19 @@ function ScrollSensitiveDiv({ children }) {
   );
 }
 
+// Usage
+
 function Sionna() {
+
+  // Function to generate chapter length bars
+  const generateChapterLengthBars = (numBars) => {
+    return Array(numBars).fill().map((_, index) => (
+      <div key={index} className="length-bar">
+        <div className="length-bar-shade"></div>
+      </div>
+    ));
+  };
+
   return (
     <div className="SionnaMain">
       <div className="about">
@@ -109,7 +120,7 @@ function Sionna() {
 
         <h1>目錄</h1>
 
-        <div class="spear-container">
+        <div className="spear-container">
           <div class="spear spear-v2">
             <div class="spearhead">
               <div class="spearhead-shade"></div>
@@ -123,21 +134,43 @@ function Sionna() {
           </div>
         </div>
 
-        <ul className="list">
+        <ul className="chapterList">
           <h3>第一篇：綠林與石堡</h3>
 
-          <ul className="act1">
-            <li><Link to="/SionnasDream/0" className="link">零‧夢的鬧鐘 (新!)</Link></li>
-            <li><Link to="/SionnasDream/1" className="link">一‧女王夢</Link></li>
-            <li><Link to="/SionnasDream/2" className="link">二‧靈魂請了假</Link></li>
-            <li><Link to="/SionnasDream/3" className="link">三‧為不運動而熱身</Link></li>
-            <li><Link to="/SionnasDream/4" className="link">四‧窗外的樹</Link></li>
-            <li><Link to="/SionnasDream/5" className="link">五‧騎士與女王</Link></li>
-            <li><Link to="/SionnasDream/6" className="link">六‧不想走的路</Link></li>
-            <li><Link to="/SionnasDream/7" className="link">七‧這是遊戲啊</Link></li>
-            <li><Link to="/SionnasDream/8" className="link">八‧征伐、戰爭、温飽、生活 (新!)</Link></li>
-            <li><Link to="/SionnasDream/9" className="link">九‧要愛情、也要戰爭 (新!)</Link></li>
-            <li><Link to="/SionnasDream/9x" className="link">後‧夢境(新!)</Link></li>
+          <ul className="eachAct act1">
+            <li><div class="chapter-link"><Link to="/SionnasDream/0" className="link">零‧夢的鬧鐘 (新!)</Link></div>
+            <div class="chapter-length">{generateChapterLengthBars(Math.ceil(427 / 1000))}</div>
+            </li>
+            <li><div class="chapter-link"><Link to="/SionnasDream/1" className="link">一‧女王夢</Link></div>
+            <div class="chapter-length">{generateChapterLengthBars(Math.ceil(4801 / 1000))}</div>
+            </li>
+            <li><div class="chapter-link"><Link to="/SionnasDream/2" className="link">二‧靈魂請了假</Link></div>
+            <div class="chapter-length">{generateChapterLengthBars(Math.ceil(3294 / 1000))}</div>
+            </li>
+            <li><div class="chapter-link"><Link to="/SionnasDream/3" className="link">三‧為不運動而熱身</Link></div>
+            <div class="chapter-length">{generateChapterLengthBars(Math.ceil(2696 / 1000))}</div>
+            </li>
+            <li><div class="chapter-link"><Link to="/SionnasDream/4" className="link">四‧窗外的樹</Link></div>
+            <div class="chapter-length">{generateChapterLengthBars(Math.ceil(3257 / 1000))}</div>
+            </li>
+            <li><div class="chapter-link"><Link to="/SionnasDream/5" className="link">五‧騎士與女王</Link></div>
+            <div class="chapter-length">{generateChapterLengthBars(Math.ceil(4972 / 1000))}</div>
+            </li>
+            <li><div class="chapter-link"><Link to="/SionnasDream/6" className="link">六‧不想走的路</Link></div>
+            <div class="chapter-length">{generateChapterLengthBars(Math.ceil(4751 / 1000))}</div>
+            </li>
+            <li><div class="chapter-link"><Link to="/SionnasDream/7" className="link">七‧這是遊戲啊</Link></div>
+            <div class="chapter-length">{generateChapterLengthBars(Math.ceil(4982 / 1000))}</div>
+            </li>
+            <li><div class="chapter-link"><Link to="/SionnasDream/8" className="link">八‧征伐、戰爭、温飽、生活 (新!)</Link></div>
+            <div class="chapter-length">{generateChapterLengthBars(Math.ceil(3157 / 1000))}</div>
+            </li>
+            <li><div class="chapter-link"><Link to="/SionnasDream/9" className="link">九‧要愛情、也要戰爭 (新!)</Link></div>
+            <div class="chapter-length">{generateChapterLengthBars(Math.ceil(8202 / 1000))}</div>
+            </li>
+            <li><div class="chapter-link"><Link to="/SionnasDream/9x" className="link">後‧夢境(新!)</Link></div>
+            <div class="chapter-length">{generateChapterLengthBars(Math.ceil(199 / 1000))}</div>
+            </li>
 
           </ul>
 
@@ -151,7 +184,5 @@ function Sionna() {
 
   )
 }
-
-
 
 export default Sionna

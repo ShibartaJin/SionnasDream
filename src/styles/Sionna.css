@@ -186,7 +186,7 @@ Brown
   
 /* ------ Content page list ------ */
 
-  .contentPage .list{
+  .contentPage .chapterList{
     margin-bottom: 2vh;
     list-style: none;
     width: 70%;
@@ -195,40 +195,97 @@ Brown
 
   }
 
-  @media only screen and (max-width: 1100px) {
-    .contentPage li {      margin-left: 5vh;    }
+  ul.eachAct li{
+    display: flex;
   }
 
-  @media only screen and (max-width: 800px) {
-    .contentPage li {      margin-left: 0;    }
+  ul.eachAct{
+    padding-right: 10px;
+  }
+
+  .chapter-link {
+    flex: 0 0 80%;
+    padding-right: 20px;
+  }
+
+  .chapter-length {
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: right;
+    align-items: top;
+    text-align: right;
+    overflow-wrap:normal;
+  }
+
+  .length-bar {
+    width: 8px;
+    height: 80%;
+    max-height: 40px;
+    background-color: rgb(206, 210, 211);
+    margin-left: 2px;
+    display: inline-block;
+    border-radius: 30%;
+  }
+
+  .length-bar-shade{
+    position: relative;
+    top: 0px;
+    left: 1px;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(234, 236, 236);
+    border-radius: 60%;
+
+  }
+
+  @media only screen and (max-width: 1100px) {
+    .contentPage li {      margin-left: 5vh; margin-right: 5vh;    }
+    .contentPage {      font-size: 28px;    }
+
+  }
+
+  @media only screen and (max-width: 900px) {
+    .contentPage li {      margin-left: 10px; margin-right: 5vh;   }
     .contentPage {      font-size: 26px;    }
+    .length-bar {   height: 26px;}
+  }
+
+  @media only screen and (max-width: 700px) {
+    .contentPage {      font-size: 20px;    }
+    ul.eachAct{      padding-right: 15px;    }
+    .chapter-link {      padding-right: 40px;      flex: 0 0 70%; }
+    .chapter-length {      flex: 0 0 30%;    }
+    .length-bar {   height: 20px; width: 6px;}
+    .length-bar-shade{  left:0; width: 60%    }
   }
 
   @media only screen and (max-width: 500px) {
-    .contentPage {      font-size: 22px;    }
+    .contentPage {      font-size: 18px;    }
+    ul.eachAct{      padding-left: 10px; padding-right: 0;    }
+    .chapter-link {      padding-right: 40px;    }
+    .length-bar {   height: 20px; width: 6px;}
+    .length-bar-shade{  left:0; width: 70%    }
   }
 
-  .contentPage ul{
-    list-style-type: none;
-
+  .contentPage ul{    list-style-type: none;
   }
 
-  .list a:link {
+  .chapterList a:link {
     color: #234F1E;
     text-decoration: none;
   }
   
-  .list a:visited {
+  .chapterList a:visited {
     color: #352315;
     text-decoration: none;
   }
   
-  .list a:hover {
+  .chapterList a:hover {
     color: #234F1E;
     text-decoration: underline;
   }
   
-  .list a:active {
+  .chapterList a:active {
     color: #352315;
     background-color: transparent;
     text-decoration: underline;
@@ -236,7 +293,7 @@ Brown
   
   @media only screen and (max-width: 1100px) {
   
-    .contentPage .list {
+    .contentPage .chapterList {
       margin: 0px;
       margin-bottom: 2vh;
       padding: 0;
