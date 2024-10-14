@@ -75,7 +75,7 @@ function formatText(text) {
   text = text.replace(/(?<!\n)\n(?!\n)/g, '<br>');  // Replace single newlines with <br> tags
   text = text.replace(/\n\n/g, '</p><p>');  // Replace double newlines with paragraph tags
   text = '<p>' + text + '</p>';    // Wrap the entire text in paragraph tags
-  text = text.replace(/\n{3,}/g, '<br></p><p>&nbsp;</p><p>');  // Replace triple or more newlines with <br> tags and an empty paragraph
+  text = text.replace(/\n{3,}/g, '<br></p><p>&nbsp;</p><p>&nbsp;</p><p>');  // Replace triple or more newlines with <br> tags and an empty paragraph
   
   const sceneBreak = "</p><span class=\"sceneBreak\">* &nbsp* &nbsp*</span><p>";
   text = text.replace(/\*\s*\*\s*\*/g, sceneBreak);
