@@ -19,7 +19,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #e0c457a2;
+    background-color: #a78d4ca2;
     color: #234F1E;
     float:left;
     position: fixed;
@@ -51,13 +51,22 @@
       align-items: center;
   }
 
+  /*
+      border: 5px solid #3A5311;
+      border-radius: 2%;
+  */
   .img-container img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
       aspect-ratio: 2 / 3;
-      border: 5px solid #3A5311;
-      border-radius: 2%;
+      border: 1px solid #2e420d;
+      box-shadow: 0px 6px 30px #2e420d;
+      
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
 
   }
 
@@ -77,6 +86,42 @@
     background-size: cover;
   }
 
+  @keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }  
+  
+  .scroll-sensitive-div{
+    position: fixed;
+    width: 128px;
+    height: 128px;
+    z-index: 100;
+    bottom:5%;
+    display: block;
+  }
+
+  @media only screen and (max-width: 750px) {
+    .scroll-sensitive-div{
+      height:96px;
+      width:96px;
+    }
+  }
+
+  .scroll-sensitive-div.jumping {
+    animation: jump 0.5s ease-in-out;
+  }
+
+  .scroll-sensitive-div img{
+    object-fit: contain;
+    transform:rotate(90deg);
+    opacity: 0.6; /* Set opacity to 50% */
+    width: 100%;
+    height: 100%;
+}
 
 /* ------ contentPage ------ */
 

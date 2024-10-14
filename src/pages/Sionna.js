@@ -5,8 +5,10 @@ import {Link} from "react-router-dom";
 import "../styles/Sionna.css";
 import "../styles/Spear.css";
 import SionnaCover from "../assets/Sionna720.jpg";
-//import SionnaCoverSmall from "../assets/SionnaCoverSmall.jpg"
+import arrowHead from "../assets/arrowHeadRight.png";
 
+
+//import SionnaCoverSmall from "../assets/SionnaCoverSmall.jpg"
 function PropicReturn(){
 
   /* */
@@ -40,24 +42,49 @@ function PropicReturn(){
   
 }
 
-/* 
+function ScrollSensitiveDiv({ children }) {
+  const [isVisible, setIsVisible] = useState(false);
+  const [isJumping, setIsJumping] = useState(false);
 
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY === 0 && window.innerWidth < 1100) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    }
 
-          <ul className="act1">
-            <li><a href="/SionnasDream/0">零‧夢的鬧鐘 (新!)</a></li>
-            <li><a href="/SionnasDream/1">一‧女王夢</a></li>
-            <li><a href="/SionnasDream/2">二‧靈魂請了假</a></li>
-            <li><a href="/SionnasDream/3">三‧為不運動而熱身</a></li>
-            <li><a href="/SionnasDream/4">四‧窗外的樹</a></li>
-            <li><a href="/SionnasDream/5">五‧騎士與女王</a></li>
-            <li><a href="/SionnasDream/6">六‧不想走的路</a></li>
-            <li><a href="/SionnasDream/7">七‧這是遊戲啊</a></li>
-            <li><a href="/SionnasDream/8">八‧征伐、戰爭、温飽、生活 (新!)</a></li>
-            <li><a href="/SionnasDream/9">九‧要愛情、也要戰爭 (新!)</a></li>
-            <li><a href="/SionnasDream/9x">後‧夢境(新!)</a></li>
+    function handleResize() {
+      handleScroll();
+    }
 
-          </ul>
-*/
+    handleScroll();
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
+
+    // Set up the jumping effect interval
+    const jumpInterval = setInterval(() => {
+      setIsJumping(true);
+      setTimeout(() => setIsJumping(false), 500); // Reset after 500ms
+    }, 2000);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+      clearInterval(jumpInterval);
+    };
+  }, []);
+
+  if (!isVisible) return null;
+
+  return (
+    <div className={`scroll-sensitive-div ${isJumping ? 'jumping' : ''}`}>
+      {children}
+    </div>
+  );
+}
 
 function Sionna() {
   return (
@@ -70,6 +97,11 @@ function Sionna() {
               <img src={PropicReturn()} alt="Profile Picture" />
             </div>
           </div>
+
+          <ScrollSensitiveDiv>
+            <img src={arrowHead}></img>
+
+          </ScrollSensitiveDiv>
 
       </div>
       
@@ -115,7 +147,11 @@ function Sionna() {
       </div>
 
     </div>
+
+
   )
 }
+
+
 
 export default Sionna
