@@ -1,8 +1,9 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate  } from 'react-router-dom';
 import Home from './pages/Home';
 import Sionna from './pages/Sionna';
 import Sionna0 from './pages/Sionna0';
+import Sionna0x from './pages/Sionna0x';
 import Sionna1 from './pages/Sionna1';
 import Sionna2 from './pages/Sionna2';
 import Sionna3 from './pages/Sionna3';
@@ -31,6 +32,7 @@ function App() {
         <Routes>
           <Route path="/SionnasDream/" element={<Sionna />} />
           <Route path="/SionnasDream/0" element={<Sionna0 />} />
+          <Route path="/SionnasDream/0.1" element={<Sionna0x />} />
           <Route path="/SionnasDream/1" element={<Sionna1 />} />
           <Route path="/SionnasDream/2" element={<Sionna2 />} />
           <Route path="/SionnasDream/3" element={<Sionna3 />} />
@@ -42,7 +44,7 @@ function App() {
           <Route path="/SionnasDream/9" element={<Sionna9 />} />
           <Route path="/SionnasDream/9x" element={<Sionna9x />} />
           <Route path="/SionnasDream/*" element={<Sionna />} />
-          <Route path="*" element={<Sionna />} />
+          <Route path="*" element={<Navigate to="/SionnasDream/" replace />} />
 
         </Routes>
       </Router>

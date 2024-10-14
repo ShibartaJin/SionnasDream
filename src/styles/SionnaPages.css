@@ -78,6 +78,49 @@
     margin-right: 5%;
   }
 
+  /***    Act title card    ***/
+  .actTitleCard{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+  }
+
+  h1.BookTitle {
+    color: #634834;
+    font-size: 56px;
+    margin: 2vh;
+    text-shadow: 1px 1px #7a604c;
+    
+  }
+  
+  h3.actTitle {
+    color: #194415;
+    font-size: 32px;
+    margin: 2vh;
+    text-shadow: 1px 1px #234F1E;
+    justify-content: left;
+  }
+
+  @media only screen and (max-width: 470px) {
+    h1.BookTitle{ font-size: 48px;    }
+    h3.actTitle { font-size: 28px ;}
+  }
+
+  @media only screen and (max-width: 410px) {
+    h1.BookTitle{ font-size: 42px;    }
+    h3.actTitle { font-size: 24px ;}
+  }
+
+  @media only screen and (max-width: 330px) {
+    h1.BookTitle{ font-size: 36px;    }
+    h3.actTitle { font-size: 20px ;}
+  }
+
+            /*    Act title card ends    */
+
   .chapterTitle{
     font-family:"MingLiU","DFKai-sb",serif,sans-serif;
 
@@ -95,6 +138,13 @@
       margin-bottom: 0;
     }
   }
+
+  .chapterHeadingBottom{
+    position:absolute;
+    bottom: 0;
+  }
+
+  /*  .hook vs .chapterTItle?  */
 
   @media only screen and (max-width: 700px) {
     .chapterTitle, .hook{      font-size: 36px;    }

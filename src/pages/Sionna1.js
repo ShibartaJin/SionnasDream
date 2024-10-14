@@ -15,7 +15,7 @@ function Sionna1() {
     <div className="SionnaPages">
       <div className="storyContent">
         <div className="chapterHeading">
-          <div className="previousButton navButton" onClick={() => {navigate("/SionnasDream/" + (chapterID - 1))}}>
+          <div className="previousButton navButton" onClick={() => {navigate("/SionnasDream/" + 0.1)}}>
               <img src={arrowHead}></img>
           </div>
           <h2 className="chapterTitle">一‧女王夢</h2>
@@ -45,7 +45,7 @@ function Sionna1() {
         </div>
         
         <div className="chapterHeading">
-          <div className="previousButton navButton" onClick={() => {navigate("/SionnasDream/" + (chapterID - 1))}}>
+          <div className="previousButton navButton" onClick={() => {navigate("/SionnasDream/" + 0.1)}}>
               <img src={arrowHead}></img>
           </div>
           <div className="navButton" onClick={() => {navigate("/SionnasDream")}}>

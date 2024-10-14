@@ -19,7 +19,7 @@ function Sionna0() {
               <img src={arrowHead}></img>
           </div>
           <h2 className="chapterTitle">零‧不怕鬧鐘的夢</h2>
-          <div className="nextButton navButton" onClick={() => {navigate("/SionnasDream/" + (chapterID + 1))}}>
+          <div className="nextButton navButton" onClick={() => {navigate("/SionnasDream/" + (chapterID + 0.1))}}>
               <img src={arrowHead}></img>
           </div>
         </div>
@@ -51,7 +51,7 @@ function Sionna0() {
           <div className="navButton" onClick={() => {navigate("/SionnasDream")}}>
             <h2 className="chapterTitle">回主目錄</h2>
           </div>
-          <div className="nextButton navButton" onClick={() => {navigate("/SionnasDream/"+ (chapterID + 1))}}>
+          <div className="nextButton navButton" onClick={() => {navigate("/SionnasDream/"+ (chapterID + 0.1))}}>
               <img src={arrowHead}></img>
           </div>
         </div>
