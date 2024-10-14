@@ -201,13 +201,13 @@
 
     span.sceneBreak{      font-size: 16px;    }
   
-    .alignMid{      font-size: 12px;     }
+    .alignMid span{      font-size: 16px;     }
   
-    .alignLeft{      font-size: 12px;    }
+    .alignLeft span{      font-size: 16px;    }
     
-    .alignRight{      font-size: 12px;    }
+    .alignRight span{      font-size: 16px;    }
 
-    .msgTimeMark{
+    .msgTimeMark span{
       font-size: 10px;
     }
   }
@@ -223,19 +223,19 @@
 
   .alignMid{
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     
   }
 
   .alignLeft{
     text-align: left;
-    font-size: 16px;
+    font-size: 20px;
     margin-left: 10%;
   }
   
   .alignRight{
     text-align: right;
-    font-size: 16px;
+    font-size: 20px;
     margin-right: 10%
   }
 
