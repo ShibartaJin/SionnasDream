@@ -162,7 +162,7 @@ Brown
   h1 {
     color: #352315;
     margin: 2vh;
-    text-shadow: 2px 2px #352315;
+    text-shadow: 1px 1px #634834;
     
   }
   
@@ -251,33 +251,38 @@ Brown
   }
 
   @media only screen and (max-width: 700px) {
-    .contentPage {      font-size: 20px;    }
+    .contentPage {      font-size: 18px;    }
     ul.eachAct{      padding-right: 15px;    }
     .chapter-link {      padding-right: 40px;      flex: 0 0 70%; }
     .chapter-length {      flex: 0 0 30%;    }
-    .length-bar {   height: 20px; width: 6px;}
+    .length-bar {   height: 18px; width: 6px;}
     .length-bar-shade{  left:0; width: 60%    }
   }
 
   @media only screen and (max-width: 500px) {
-    .contentPage {      font-size: 18px;    }
+    .contentPage {      font-size: 16px;    }
     ul.eachAct{      padding-left: 10px; padding-right: 0;    }
     .chapter-link {      padding-right: 40px;    }
-    .length-bar {   height: 20px; width: 6px;}
+    .length-bar {   height: 16px; width: 6px;}
     .length-bar-shade{  left:0; width: 70%    }
   }
 
   .contentPage ul{    list-style-type: none;
   }
 
+  .chapterList a{
+    font-family:"MingLiU","DFKai-sb",serif,sans-serif;
+    font-weight: bold;
+  }
+
   .chapterList a:link {
     color: #234F1E;
-    text-decoration: none;
+    text-decoration: underline;
   }
   
   .chapterList a:visited {
     color: #352315;
-    text-decoration: none;
+    text-decoration: underline;
   }
   
   .chapterList a:hover {
@@ -287,7 +292,6 @@ Brown
   
   .chapterList a:active {
     color: #352315;
-    background-color: transparent;
     text-decoration: underline;
   }
   
