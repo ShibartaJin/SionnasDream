@@ -1,8 +1,8 @@
 import React from 'react';
 import "../styles/SionnaPages.css";
-import "../styles/Spear.css";
 import { useNavigate } from 'react-router-dom'
 import arrowHead from "../assets/arrowHeadRight.png";
+import SpearSeperator from '../components/SpearSeperator';
 
 const chapterID = 0;
 

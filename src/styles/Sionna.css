@@ -39,8 +39,8 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1;
-      width: 86%;
-      height: 86%;
+      width: 92%;
+      height: 92%;
   }
 
   .img-container {
@@ -135,7 +135,7 @@ Brown
 
   .contentPage {
     font-size: 35px;
-    height: 100vh;
+    height: 100%;
     width: 60%;
     display: flex;
     justify-content: center;
@@ -144,6 +144,9 @@ Brown
     float: right;
     background-color: #cfc4b1;
     color: #352315;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     background-image: url(../assets/PaperBack.jpg);
     background-size: cover;
@@ -161,7 +164,8 @@ Brown
 
   h1 {
     color: #352315;
-    margin: 2vh;
+    margin-top: 30px;
+    margin-bottom: 10px;
     text-shadow: 1px 1px #634834;
     
   }
@@ -181,7 +185,6 @@ Brown
     margin-top: 30px;
     margin-bottom: 10px;
     margin-left: 30px;
-    text-shadow: 2px 2px rgb(162, 186, 238);
   }
   
 /* ------ Content page list ------ */
@@ -293,6 +296,10 @@ Brown
   .chapterList a:active {
     color: #352315;
     text-decoration: underline;
+  }
+
+  .credits {
+    width: 80%;
   }
   
   @media only screen and (max-width: 1100px) {

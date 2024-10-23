@@ -6,6 +6,7 @@ import "../styles/Sionna.css";
 import "../styles/Spear.css";
 import SionnaCover from "../assets/Sionna720.jpg";
 import arrowHead from "../assets/arrowHeadRight.png";
+import SpearSeperator from '../components/SpearSeperator';
 
 
 //import SionnaCoverSmall from "../assets/SionnaCoverSmall.jpg"
@@ -118,21 +119,13 @@ function Sionna() {
       
       <div className="contentPage">
 
+        <h1>最新消息</h1>
+        <p>休刊中，預計下一章推出時間: 11月8日(五)<br/>
+        目前僅為初稿，時有修改，只供朋友間傳閱</p>
+
         <h1>目錄</h1>
 
-        <div className="spear-container">
-          <div class="spear spear-v2">
-            <div class="spearhead">
-              <div class="spearhead-shade"></div>
-              <div class="spearDeco"></div>
-              <div class="spearMidDeco"></div>
-              <div class="spearEndDeco"></div>
-            </div>
-            <div class="shaft">
-              <div class="shaft-shade"></div>
-            </div>
-          </div>
-        </div>
+        <SpearSeperator/>
 
         <ul className="chapterList">
           <h3>第一篇：綠林與石堡</h3>
@@ -176,6 +169,16 @@ function Sionna() {
 
         </ul>
 
+        <div className="credits">
+        <h1>鳴謝</h1>
+        <p>Herr Issac (首位讀者)<br />
+           Xenia the Senior<br />
+           冰<br />
+           Annie<br />
+           Michelle<br />
+           Chloe<br />
+           Thomas the Engine</p>
+        </div>
 
       </div>
 
