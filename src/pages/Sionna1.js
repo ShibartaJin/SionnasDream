@@ -14,6 +14,7 @@ function Sionna1() {
   return (
     <div className="SionnaPages">
       <div className="storyContent">
+
         <div className="chapterHeading">
           <div className="previousButton navButton" onClick={() => {navigate("/SionnasDream/" + 0.1)}}>
               <img src={arrowHead}></img>
