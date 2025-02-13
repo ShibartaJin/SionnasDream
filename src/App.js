@@ -20,7 +20,11 @@ import Sionna9x from './pages/Sionna9x';
 //import Footer from "./components/Footer";
 
 /*
-
+yarn start
+git add.
+git commit -m "push name"
+git push
+npm run deploy
 
 */
 

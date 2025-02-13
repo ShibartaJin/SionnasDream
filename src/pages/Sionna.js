@@ -120,7 +120,7 @@ function Sionna() {
       <div className="contentPage">
 
         <h1>最新消息</h1>
-        <p>休刊中，預計下一章推出時間: 11月29日(五)<br/>
+        <p>休刊中，預計下一章推出時間: 3月14日(五)<br/>
         目前僅為初稿，時有修改，只供朋友間傳閱<br/>
         謝謝你打開了我
         </p>
@@ -133,7 +133,7 @@ function Sionna() {
           <h3>第一篇：綠林與石堡</h3>
 
           <ul className="eachAct act1">
-            <li><div class="chapter-link"><Link to="/SionnasDream/0" className="link">零‧夢的鬧鐘 (新!)</Link></div>
+            <li><div class="chapter-link"><Link to="/SionnasDream/0" className="link">零‧不怕鬧鐘的夢 (新!)</Link></div>
             <div class="chapter-length">{generateChapterLengthBars(Math.ceil(427 / 1000))}</div>
             </li>
             <li><div class="chapter-link"><Link to="/SionnasDream/1" className="link">一‧女王夢</Link></div>
